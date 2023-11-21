@@ -31,13 +31,7 @@ fun RecipeInfo(recipeDTO: RecipeDTO) {
     ScalingLazyColumn(Modifier.fillMaxSize(), scrollState) {
         item {
             Column {
-                Image(
-                    painter = painterResource(recipeDTO.image),
-                    contentDescription = "Recipe image",
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .height(124.dp).padding(top = 24.dp), contentScale = ContentScale.FillWidth
-                )
+                recipeDTO.image()
                 Text(text = recipeDTO.name, Modifier.padding(24.dp))
                 Text(text = stringResource(recipeDTO.description), Modifier.padding(24.dp))
             }

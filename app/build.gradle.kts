@@ -49,7 +49,8 @@ android {
 }
 
 dependencies {
-
+    implementation("io.coil-kt:coil:2.5.0")
+    implementation("io.coil-kt:coil-compose:2.5.0")
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("com.google.android.gms:play-services-wearable:18.0.0")
     implementation("androidx.percentlayout:percentlayout:1.0.0")
